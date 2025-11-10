@@ -37,7 +37,7 @@ def predikat(row):
     
 data['Grade']= data['IPK'].apply(grade)
 data['Predikat']= data.apply(predikat, axis=1)
-data = data['NIM', 'Nama Mahasiswa', 'Program Studi', 'IPK', 'Lama Studi (Semester)','Grade', 'Predikat','Tahun Wisuda']
+data = data[['NIM', 'Nama Mahasiswa', 'Program Studi', 'IPK', 'Lama Studi (Semester)','Grade', 'Predikat','Tahun Wisuda']]
 
 
 
